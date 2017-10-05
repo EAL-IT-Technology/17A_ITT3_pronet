@@ -18,7 +18,7 @@ Configuration
 
 The directory `inventory` contains the inventory information for the development setup and for the groups.
 
-For the nagios specific things see moozer/ansible-server-nagios
+For the nagios specific things see [the repository](https://github.com/moozer/ansible-role-nagios)
 
 ### `inventory/development`
 
@@ -59,8 +59,8 @@ To pull the latest config (includin submodules)
 
 To test the configuration (to everything defined in `inventory` and `site.yml`)
 
-    `ansible-playbook -i inventory/<subdir>/inventory` site.yml --check -D
+    `ansible-playbook -i inventory/<subdir>/inventory site.yml --check -D`
 
 To apply the configuration (to everything defined in `inventory` and `site.yml`)
 
-    `ansible-playbook -i inventory/<subdir>/inventory` site.yml
+    `ansible-playbook -i inventory/<subdir>/inventory site.yml`
